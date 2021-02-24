@@ -1,0 +1,18 @@
+<div class="autor">{{title}}</div>
+<div class="tarjeta">
+    <header class="header">Prueba de lo aprendido</header>
+    <div class="botones">
+        <button (click)="obtenerTec()" class="btn">Mis tecnologias</button>
+        <button (click)="obtenerNew()" class="btn">Futuras Tecnoligas</button>
+    </div>
+    <div *ngIf="banderat" class="tecnologiasP">
+        <ul *ngFor="let item of Lenguajes">
+            <li>{{item}}</li>
+        </ul>
+    </div>
+    <div *ngIf="banderaN" class="tecnolgiasF">
+        <ul *ngFor="let item of TICSAPRENDER ">
+            <li>{{item}}</li>
+        </ul>
+    </div>
+</div>
